@@ -1,6 +1,6 @@
 package com.femsa.oxxo.mermaautorizada.model;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,8 +18,6 @@ public class XxmapPermisoMermaPlaza {
 
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-private Long id; 
-
 @Column(name="CR_PLAZA", length=50, nullable=false)
 private String crPlaza; 
 
@@ -33,13 +31,13 @@ private Integer registroActivo;
 private String createdBy;
 
 @Column(name="CREATION_DATE", nullable=false)
-private LocalDateTime creationDate; 
+private Date creationDate;
 
 @Column(name="MODIFIED_BY", length=50, nullable=false)
 private String modifiedBy; 
 
 @Column(name="MODIFIED_DATE", nullable=false)
-private LocalDateTime modifiedDate; 
+private Date modifiedDate;
 
 
 
